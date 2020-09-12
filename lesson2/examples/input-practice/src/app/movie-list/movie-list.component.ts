@@ -12,4 +12,9 @@ export class MovieListComponent implements OnInit {
 
    ngOnInit() {
    }
+   addMovie (newTitle: string) {
+      if(!this.movies.includes(newTitle) && newTitle !== ""){
+         this.movies.push(newTitle);
+      }
+   }
 }
