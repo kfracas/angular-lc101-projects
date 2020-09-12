@@ -16,3 +16,12 @@ img {
     display: block;
     margin: auto;
 }
+
+p {
+    color: hotpink;
+}
+
+.iceCream {
+    text-align: center;
+    color: green;
+}
