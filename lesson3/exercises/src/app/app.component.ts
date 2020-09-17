@@ -51,7 +51,7 @@ handleAbortMission(rocketImage) {
 }
 
 moveRocket(rocketImage, direction) {
-  this.warning();
+  this.warning(this.width, this.height);
   if (direction === 'right') {
   let movement = parseInt(rocketImage.style.left) + 10 + 'px';
   rocketImage.style.left = movement;
@@ -71,9 +71,11 @@ moveRocket(rocketImage, direction) {
   }
 }
 
-warning() {
-  if (this.width === 0 || this.height === 0) {
-    this.color = 'orange'
+warning(width, height) {
+  if (width > 260000 || width < 0 || height < 0 || height > 340000) {
+    this.color = 'orange';
+  } else {
+    this.color = 'blue';
   }
 }
 
