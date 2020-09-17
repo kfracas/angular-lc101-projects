@@ -3,6 +3,11 @@
    color: brown;
 }
 
+.jokeButtons {
+   text-align: center;
+   color: brown;
+}
+
 h3 {
    text-align: center;
    text-decoration: underline;
@@ -22,4 +27,12 @@ button {
 
 .copper {
    background: #b87333 ;
+}
+
+.frustration {
+   background: gold;
+}
+
+.catchMe {
+   background: silver;
 }
